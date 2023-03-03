@@ -15,33 +15,33 @@ export default {
   data(){
     return {
       objStatesData: {
-        AMA: {color: am5.color("#009757"), lat: -3.602249, lon: -78.411071, noPrazo: 1, atencao: 2, atrasada: 3},
-        ANC: {color: am5.color("#E8385F"), lat: -8.777157, lon: -80.657286, noPrazo: 4, atencao: 5, atrasada: 6},
-        APU: {color: am5.color("#009757"), lat: -13.377157, lon: -73.487286, noPrazo: 1, atencao: 2, atrasada: 3},
-        ARE: {color: am5.color("#E8385F"), lat: -15.377157, lon: -74.007286, noPrazo: 1, atencao: 2, atrasada: 3},
-        AYA: {color: am5.color("#009757"), lat: -14.377157, lon: -74.487286, noPrazo: 1, atencao: 2, atrasada: 3},
-        CAJ: {color: am5.color("#E8385F"), lat: -5.077157, lon: -79.057286, noPrazo: 1, atencao: 2, atrasada: 3},
-        CAL: {color: am5.color("#E8385F"), lat: -11.177157, lon: -79.907286, noPrazo: 1, atencao: 2, atrasada: 3},
-        CUS: {color: am5.color("#009757"), lat: -11.977157, lon: -72.357286, noPrazo: 1, atencao: 2, atrasada: 3},
-        HUC: {color: am5.color("#009757"), lat: -8.377157, lon: -76.657286, noPrazo: 1, atencao: 2, atrasada: 3},
-        HUV: {color: am5.color("#E8385F"), lat: -12.377157, lon: -75.257286, noPrazo: 1, atencao: 2, atrasada: 3},
-        ICA: {color: am5.color("#E8385F"), lat: -13.977157, lon: -78.087286, noPrazo: 1, atencao: 2, atrasada: 3},
-        JUN: {color: am5.color("#009757"), lat: -10.977157, lon: -75.257286, noPrazo: 1, atencao: 2, atrasada: 3},
-        LAL: {color: am5.color("#E8385F"), lat: -7.577157, lon: -81.057286, noPrazo: 1, atencao: 2, atrasada: 3},
-        LAM: {color: am5.color("#E8385F"), lat: -6.077157, lon: -82.057286, noPrazo: 1, atencao: 2, atrasada: 3},
-        LIM: {color: am5.color("#E8385F"), lat: -10.277157, lon: -79.487286, noPrazo: 1, atencao: 2, atrasada: 3},
-        LMA: {color: am5.color("#E8385F"), lat: -12.077157, lon: -79.487286, noPrazo: 1, atencao: 2, atrasada: 3},
-        LOR: {color: am5.color("#252351"), lat: -2.877157, lon: -73.057286, noPrazo: 1, atencao: 2, atrasada: 3},
-        MDD: {color: am5.color("#252351"), lat: -10.877157, lon: -70.557286, noPrazo: 10, atencao: 20, atrasada: 30},
-        MOQ: {color: am5.color("#E8385F"), lat: -16.377157, lon: -73.487286, noPrazo: 1, atencao: 2, atrasada: 3},
-        PAS: {color: am5.color("#009757"), lat: -9.977157, lon: -75.657286, noPrazo: 1, atencao: 2, atrasada: 3},
-        PIU: {color: am5.color("#E8385F"), lat: -4.877157, lon: -83.057286, noPrazo: 1, atencao: 2, atrasada: 3},
-        PUN: {color: am5.color("#009757"), lat: -13.177157, lon: -69.757286, noPrazo: 1, atencao: 2, atrasada: 3},
-        SAM: {color: am5.color("#252351"), lat: -6.360896, lon: -76.868080, noPrazo: 4, atencao: 5, atrasada: 6},
-        TAC: {color: am5.color("#E8385F"), lat: -17.377157, lon: -70.257286, noPrazo: 1, atencao: 2, atrasada: 3},
-        TUM: {color: am5.color("#E8385F"), lat: -3.177157, lon: -83.257286, noPrazo: 1, atencao: 2, atrasada: 3},
-        UCA: {color: am5.color("#252351"), lat: -8.877157, lon: -73.557286, noPrazo: 1, atencao: 2, atrasada: 3},
-        LKT: {color: am5.color("#009757"), lat: -15.377157, lon: -69.957286, noPrazo: 1, atencao: 2, atrasada: 3},
+        AMA: {color: am5.color("#009757"), lat: -3.602249, lon: -78.411071, noPrazo: 1, total: 2, atrasada: 3},
+        ANC: {color: am5.color("#E8385F"), lat: -8.777157, lon: -80.657286, noPrazo: 4, total: 5, atrasada: 6},
+        APU: {color: am5.color("#009757"), lat: -13.377157, lon: -73.487286, noPrazo: 1, total: 2, atrasada: 3},
+        ARE: {color: am5.color("#E8385F"), lat: -15.377157, lon: -74.007286, noPrazo: 1, total: 2, atrasada: 3},
+        AYA: {color: am5.color("#009757"), lat: -14.377157, lon: -74.487286, noPrazo: 1, total: 2, atrasada: 3},
+        CAJ: {color: am5.color("#E8385F"), lat: -5.077157, lon: -79.057286, noPrazo: 1, total: 2, atrasada: 3},
+        CAL: {color: am5.color("#E8385F"), lat: -11.177157, lon: -79.907286, noPrazo: 1, total: 2, atrasada: 3},
+        CUS: {color: am5.color("#009757"), lat: -11.977157, lon: -72.357286, noPrazo: 1, total: 2, atrasada: 3},
+        HUC: {color: am5.color("#009757"), lat: -8.377157, lon: -76.657286, noPrazo: 1, total: 2, atrasada: 3},
+        HUV: {color: am5.color("#E8385F"), lat: -12.377157, lon: -75.257286, noPrazo: 1, total: 2, atrasada: 3},
+        ICA: {color: am5.color("#E8385F"), lat: -13.977157, lon: -78.087286, noPrazo: 1, total: 2, atrasada: 3},
+        JUN: {color: am5.color("#009757"), lat: -10.977157, lon: -75.257286, noPrazo: 1, total: 2, atrasada: 3},
+        LAL: {color: am5.color("#E8385F"), lat: -7.577157, lon: -81.057286, noPrazo: 1, total: 2, atrasada: 3},
+        LAM: {color: am5.color("#E8385F"), lat: -6.077157, lon: -82.057286, noPrazo: 1, total: 2, atrasada: 3},
+        LIM: {color: am5.color("#E8385F"), lat: -10.277157, lon: -79.487286, noPrazo: 1, total: 2, atrasada: 3},
+        LMA: {color: am5.color("#E8385F"), lat: -12.077157, lon: -79.487286, noPrazo: 1, total: 2, atrasada: 3},
+        LOR: {color: am5.color("#252351"), lat: -2.877157, lon: -73.057286, noPrazo: 1, total: 2, atrasada: 3},
+        MDD: {color: am5.color("#252351"), lat: -10.877157, lon: -70.557286, noPrazo: 10, total: 20, atrasada: 30},
+        MOQ: {color: am5.color("#E8385F"), lat: -16.377157, lon: -73.487286, noPrazo: 1, total: 2, atrasada: 3},
+        PAS: {color: am5.color("#009757"), lat: -9.977157, lon: -75.657286, noPrazo: 1, total: 2, atrasada: 3},
+        PIU: {color: am5.color("#E8385F"), lat: -4.877157, lon: -83.057286, noPrazo: 1, total: 2, atrasada: 3},
+        PUN: {color: am5.color("#009757"), lat: -13.177157, lon: -69.757286, noPrazo: 1, total: 2, atrasada: 3},
+        SAM: {color: am5.color("#252351"), lat: -6.360896, lon: -76.868080, noPrazo: 4, total: 5, atrasada: 6},
+        TAC: {color: am5.color("#E8385F"), lat: -17.377157, lon: -70.257286, noPrazo: 1, total: 2, atrasada: 3},
+        TUM: {color: am5.color("#E8385F"), lat: -3.177157, lon: -83.257286, noPrazo: 1, total: 2, atrasada: 3},
+        UCA: {color: am5.color("#252351"), lat: -8.877157, lon: -73.557286, noPrazo: 1, total: 2, atrasada: 3},
+        LKT: {color: am5.color("#009757"), lat: -15.377157, lon: -69.957286, noPrazo: 1, total: 2, atrasada: 3},
       },
       auxIdx: -1,
     }
@@ -68,7 +68,7 @@ export default {
     );
 
     peruSeries.mapPolygons.template.setAll({
-      tooltipText: "{name}",
+      tooltipText: "[BOLD]{name}[/]\n{dados}",
       interactive: true,
       templateField: "polygonSettings"
     });
@@ -90,12 +90,14 @@ export default {
       thisVue.auxIdx++;
       return am5.Bullet.new(root, {
         sprite: am5.Label.new(root, {
-          html:   `<div style="display: flex; gap: 5px; padding: 5px; background-color: #5D686E;">
+          // <div style="background-color: #5D686E; width: 110px; padding-top: 5px; text-align: center; color: white; font-weight: bold">${Object.keys(thisVue.objStatesData)[thisVue.auxIdx]}</div>
+          html:   `
+                  <div style="display: flex; gap: 5px; padding: 5px; background-color: #5D686E;">
+                    <div style="width: 30px; height: 30px; background-color: #9d9999; color: white; position: relative; font-weight: bold">
+                      <span id="total_${Object.keys(thisVue.objStatesData)[thisVue.auxIdx]}" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"></span>
+                    </div>
                     <div style="width: 30px; height: 30px; background-color: #009757; color: white; position: relative; font-weight: bold">
                       <span id="noPrazo_${Object.keys(thisVue.objStatesData)[thisVue.auxIdx]}" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"></span>
-                    </div>
-                    <div style="width: 30px; height: 30px; background-color: #F89C1B; color: white; position: relative; font-weight: bold">
-                      <span id="atencao_${Object.keys(thisVue.objStatesData)[thisVue.auxIdx]}" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"></span>
                     </div>
                     <div style="width: 30px; height: 30px; background-color: #E8385F; color: white; position: relative; font-weight: bold">
                       <span id="atrasada_${Object.keys(thisVue.objStatesData)[thisVue.auxIdx]}" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"></span>
@@ -111,7 +113,8 @@ export default {
         id: `PE-${state}`,
         polygonSettings: {
           fill: this.objStatesData[state].color
-        }
+        },
+        dados: `T: ${this.objStatesData[state].total} | P: ${this.objStatesData[state].noPrazo} | A: ${this.objStatesData[state].atrasada}`
       });
 
       if(this.objStatesData[state].lat && this.objStatesData[state].lon){
@@ -124,7 +127,7 @@ export default {
       Object.keys(this.objStatesData).forEach(state => {
         if(this.objStatesData[state].lat && this.objStatesData[state].lon){
           document.getElementById(`noPrazo_${state}`).textContent = this.objStatesData[state].noPrazo;
-          document.getElementById(`atencao_${state}`).textContent = this.objStatesData[state].atencao;
+          document.getElementById(`total_${state}`).textContent = this.objStatesData[state].total;
           document.getElementById(`atrasada_${state}`).textContent = this.objStatesData[state].atrasada;
         }
       });
