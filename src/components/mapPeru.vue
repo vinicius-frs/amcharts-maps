@@ -42,10 +42,17 @@ export default {
         TUM: am5.color("#E8385F"),
         UCA: am5.color("#252351"),
         LKT: am5.color("#FECA19"),
+      },
+      objAuxLabels: {
+        noPrazo: 2,
+        atencao: 4,
+        atrasada: 3
       }
     }
   },
   mounted() {
+    const thisVue = this;
+
     let root = am5.Root.new("chartdiv");
 
     root.setThemes([
@@ -78,6 +85,30 @@ export default {
       var dataItem = ev.target.dataItem;
       peruSeries.zoomToDataItem(dataItem);
     });
+
+    let pointSeries = chart.series.push(
+      am5map.MapPointSeries.new(root, {
+      })
+    );
+    pointSeries.bullets.push(function() {
+      return am5.Bullet.new(root, {
+        sprite: am5.Label.new(root, {
+          html:   `<div style="display: flex; gap: 5px">
+                    <div style="width: 30px; height: 30px; background-color: green; color: white; position: relative">
+                      <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">${thisVue.objAuxLabels.noPrazo}</span>
+                    </div>
+                    <div style="width: 30px; height: 30px; background-color: yellow; color: black; position: relative">
+                      <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">${thisVue.objAuxLabels.atencao}</span>
+                    </div>
+                    <div style="width: 30px; height: 30px; background-color: red; color: black; position: relative">
+                      <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">${thisVue.objAuxLabels.atrasada}</span>
+                    </div>
+                  </div>`
+        })
+      });
+    });
+
+    pointSeries.pushDataItem({ latitude: -7.360896, longitude: -76.868080 });
 
     let peruData = [];
     Object.keys(this.objStateColors).forEach(state => {
