@@ -82,6 +82,7 @@ body{
   color: white;
   font-size: 150%;
   display: flex;
+  font-weight: bold;
 }
 .p-relative{
   height: 100%;
@@ -118,11 +119,12 @@ body{
 }
 .data{
   height: 100%;
-  width: 50%;
+  width: 70%;
 }
 .logo{
   height: 100%;
-  width: 35%;
+  width: 15%;
+  background-color: white;
 }
 #chartdiv{
   background-image: url("./assets/fundo.jpg");
