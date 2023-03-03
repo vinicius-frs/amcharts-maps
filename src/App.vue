@@ -10,7 +10,7 @@
       <div class="p-center-data">{{data}}</div>
     </div>
     <div class="p-relative logo">
-      <div class="p-center-logo">LOGO</div>
+      <img class="p-center-logo" src="./assets/runtec_logo.png">
     </div>
   </div>
   <mapPeru/>
@@ -84,6 +84,7 @@ body{
   display: flex;
 }
 .p-relative{
+  height: 100%;
   position: relative;
 }
 .p-center{
@@ -99,6 +100,7 @@ body{
   transform: translateY(-50%);
 }
 .p-center-logo{
+  height: 60%;
   position: absolute;
   top: 50%;
   right: 5%;
