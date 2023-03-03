@@ -125,6 +125,6 @@ body{
   width: 35%;
 }
 #chartdiv{
-  background-color: #3aa6ff;
+  background-image: url("./assets/fundo.jpg");
 }
 </style>
