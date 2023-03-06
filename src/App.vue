@@ -14,6 +14,11 @@
     </div>
   </div>
   <router-view/>
+  <div class="div-legenda">
+    <div class="quadrado-legenda total"></div><div class="texto-legenda">Total</div>
+    <div class="quadrado-legenda no-prazo"></div><div class="texto-legenda">No prazo</div>
+    <div class="quadrado-legenda atrasada"></div><div class="texto-legenda">Atrasadas</div>
+  </div>
 </template>
 
 <script>
@@ -126,5 +131,29 @@ body{
 }
 #chartdiv{
   background-image: url("./assets/fundo.jpg");
+}
+.div-legenda{
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  display: flex;
+  gap: 5px;
+}
+.quadrado-legenda{
+  width: 25px;
+  height: 25px;
+}
+.total{
+  background-color: #9d9999;
+}
+.no-prazo{
+  background-color: #009757;
+}
+.atrasada{
+  background-color: #E8385F;
+}
+.texto-legenda{
+  line-height: 25px;
+  font-weight: bold;
 }
 </style>
