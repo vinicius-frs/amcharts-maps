@@ -13,16 +13,14 @@
       <img class="p-center-logo" src="./assets/runtec_logo.png">
     </div>
   </div>
-  <mapPeru/>
+  <router-view/>
 </template>
 
 <script>
-import mapPeru from './components/mapPeru.vue'
 
 export default {
   name: 'App',
   components: {
-    mapPeru,
   },
   data(){
     return {
