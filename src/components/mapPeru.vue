@@ -57,7 +57,8 @@ export default {
 
     let chart = root.container.children.push(
       am5map.MapChart.new(root, {
-        minZoomLevel: 0.9
+        minZoomLevel: 0.9,
+        homeZoomLevel: 0.9,
       })
     );
 
@@ -66,6 +67,10 @@ export default {
         geoJSON: am5geodata_peruLow
       })
     );
+
+    peruSeries.events.on("datavalidated", function() {
+      chart.goHome();
+    });
 
     peruSeries.mapPolygons.template.setAll({
       tooltipText: "[BOLD]{name}[/]\n{dados}",
