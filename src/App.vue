@@ -104,7 +104,8 @@ body{
   transform: translateY(-50%);
 }
 .p-center-logo{
-  height: 60%;
+  width: 80%;
+  max-height: 95%;
   position: absolute;
   top: 50%;
   right: 5%;
