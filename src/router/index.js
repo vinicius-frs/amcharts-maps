@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import mapPeru from '../components/mapPeru.vue'
 import mapChile from '../components/mapChile.vue'
 import mapBrasil from '../components/mapBrasil.vue'
+import selectMap from '../components/selectMap.vue'
 
 const routes = [
   {
@@ -18,6 +19,11 @@ const routes = [
     path: '/brasil',
     name: 'Brasil',
     component: mapBrasil
+  },
+  {
+    path: '/',
+    name: 'selectMap',
+    component: selectMap
   }
 ]
 
