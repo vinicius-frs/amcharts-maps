@@ -6,7 +6,7 @@
 import * as am5 from "@amcharts/amcharts5";
 import * as am5map from "@amcharts/amcharts5/map";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import am5geodata_chileLow from "@amcharts/amcharts5-geodata/chileLow";
+import am5geodata_chileNorteGrandeLow from "@amcharts/amcharts5-geodata/chileNorteGrandeLow";
 
 export default {
   name: 'mapChile',
@@ -15,22 +15,9 @@ export default {
   data(){
     return {
       objStatesData: {
-        AI: {color: am5.color("#5D686E"), lat: -18.020327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        AN: {color: am5.color("#252351"), lat: -20.720327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        AR: {color: am5.color("#009757"), lat: -23.420327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        AP: {color: am5.color("#252351"), lat: -26.020327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        AT: {color: am5.color("#FECA19"), lat: -28.620327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        BI: {color: am5.color("#E8385F"), lat: -31.120327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        CO: {color: am5.color("#FECA19"), lat: -33.520327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        LI: {color: am5.color("#E8385F"), lat: -35.920327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        LL: {color: am5.color("#009757"), lat: -38.220327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        LR: {color: am5.color("#009757"), lat: -40.460327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        MA: {color: am5.color("#5D686E"), lat: -42.620327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        ML: {color: am5.color("#E8385F"), lat: -44.720327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        NB: {color: am5.color("#E8385F"), lat: -46.720327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        RM: {color: am5.color("#E8385F"), lat: -48.670327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        TA: {color: am5.color("#252351"), lat: -50.570327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        VS: {color: am5.color("#E8385F"), lat: -52.370327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
+        AN: {color: am5.color("#252351"), lat: -18.720327, lon: -74.149890, noPrazo: 1, total: 2, atrasada: 3},
+        AP: {color: am5.color("#252351"), lat: -22.720327, lon: -74.149890, noPrazo: 1, total: 2, atrasada: 3},
+        TA: {color: am5.color("#252351"), lat: -18.720327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
       },
       auxIdx: -1,
     }
@@ -48,13 +35,12 @@ export default {
       am5map.MapChart.new(root, {
         minZoomLevel: 0.9,
         homeZoomLevel: 0.9,
-        homeGeoPoint: { longitude: -71.046485, latitude: -39.270327 },
       })
     );
 
     let chileSeries = chart.series.push(
       am5map.MapPolygonSeries.new(root, {
-        geoJSON: am5geodata_chileLow
+        geoJSON: am5geodata_chileNorteGrandeLow
       })
     );
     
