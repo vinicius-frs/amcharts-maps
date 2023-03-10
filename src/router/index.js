@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import mapPeru from '../components/mapPeru.vue'
+import mapPeruRainforest from '../components/mapPeruRainforest.vue'
+import mapPeruHighlands from '../components/mapPeruHighlands.vue'
+import mapPeruCoast from '../components/mapPeruCoast.vue'
 import mapChile from '../components/mapChile.vue'
 import mapBrasil from '../components/mapBrasil.vue'
 import mapBrasilSouth from '../components/mapBrasilSouth.vue'
@@ -10,6 +13,21 @@ const routes = [
     path: '/peru',
     name: 'Peru',
     component: mapPeru
+  },
+  {
+    path: '/peruRainforest',
+    name: 'Peru Rainforest',
+    component: mapPeruRainforest
+  },
+  {
+    path: '/peruHighlands',
+    name: 'Peru Highlands',
+    component: mapPeruHighlands
+  },
+  {
+    path: '/peruCoast',
+    name: 'Peru Coast',
+    component: mapPeruCoast
   },
   {
     path: '/chile',
