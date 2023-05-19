@@ -6,7 +6,7 @@
 import * as am5 from "@amcharts/amcharts5";
 import * as am5map from "@amcharts/amcharts5/map";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
-import am5geodata_chileLow from "@amcharts/amcharts5-geodata/chileLow";
+import am5geodata_chileLow from "@amcharts/amcharts5-geodata/chileRuntecLow";
 
 export default {
   name: 'mapChile',
@@ -30,7 +30,7 @@ export default {
         NB: {color: am5.color("#E8385F"), lat: -46.720327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
         RM: {color: am5.color("#B34CFC"), lat: -48.670327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
         TA: {color: am5.color("#252351"), lat: -50.570327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
-        VS: {color: am5.color("#E8385F"), lat: -52.370327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
+        VA: {color: am5.color("#E8385F"), lat: -52.370327, lon: -66.149890, noPrazo: 1, total: 2, atrasada: 3},
       },
       auxIdx: -1,
     }
